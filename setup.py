@@ -5,7 +5,7 @@ setup(
   packages =['talk1'],   
   version = '1.3',      
   license='MIT',        
-  description = 'A package to automate various process',   
+  description = 'A simplified version of pyttsx3',   
   author = 'George Rahul',                   
   author_email = 'georgerahul24@gmail.com',      
   url = 'https://github.com/georgerahul24/talk',    
