@@ -1,5 +1,4 @@
-"""Created by George Rahul
-To simplify the pyttsx3 module"""
+"""This package is a text to speech synthesiser"""
 import pyttsx3
 
 engine = pyttsx3.init()
