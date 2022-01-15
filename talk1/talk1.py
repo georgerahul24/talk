@@ -10,14 +10,17 @@ rate = engine.getProperty("rate")  # getting details of current speaking rate
 engine.setProperty("rate", 135)  # setting up new voice rate
 
 
-def talk(speak)->None:
+def talk(speak, var: None | bool = None) -> None:
     """A function for text to speech functionality"""
-    engine.say(speak)
-    engine.runAndWait()
-    del speak
+    try:
+        if var is not None: print(speak)
+        engine.say(speak)
+        engine.runAndWait()
+        del speak
+    except: pass
 
 
-def multithreadtalk(speak)->None:
+def multithreadtalk(speak) -> None:
     """A function for multithreaded text to speech functionality"""
     # Still in prototype
     # for multi threading else the runtime error of loop still running will come
