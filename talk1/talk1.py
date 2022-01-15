@@ -18,16 +18,3 @@ def talk(speak, var: None | bool = None) -> None:
         engine.runAndWait()
         del speak
     except: pass
-
-
-def multithreadtalk(speak) -> None:
-    """A function for multithreaded text to speech functionality"""
-    # Still in prototype
-    # for multi threading else the runtime error of loop still running will come
-    try:
-        engine.endLoop()
-    except:
-        pass
-    engine.say(speak)
-    engine.runAndWait()
-    engine.stop()
