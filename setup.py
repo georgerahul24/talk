@@ -3,7 +3,7 @@ import setuptools
 setup(
   name = 'talk1',         
   packages =['talk1'],   
-  version = '1.4',      
+  version = '1.5',      
   license='MIT',        
   description = 'A simplified version of pyttsx3',   
   author = 'George Rahul',                   
